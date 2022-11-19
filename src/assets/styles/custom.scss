@@ -1,0 +1,38 @@
+/* The following block can be included in a custom.scss */ /* make the customizations */
+$primary: #00c6f8;
+$secondary: #0055ff;
+$success: #66a329;
+$danger: #b70000;
+$warning: #8e0151;
+$info: #75d2cb;
+$light: #c0c0c0;
+$dark: #404040;
+$gold: #f8d81c;
+$silver: #918f86;
+$copper: #d18d08;
+$teams: #f4cf72;
+$levels: #8ab1f6;
+$rewards: #f07575;
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+);
+$game-colors: (
+    "gold": $gold,
+    "silver": $silver,
+    "copper": $copper,
+    "teams": $teams,
+    "levels": $levels,
+    "rewards": $rewards,
+);
+$theme-colors: map-merge($theme-colors, $game-colors);
+$font-family-sans-serif: "Century Gothic", sans-serif;
+$card-height: 100%;
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
