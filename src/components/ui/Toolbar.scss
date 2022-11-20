@@ -1,0 +1,31 @@
+@import "/src/assets/styles/colors";
+
+.main-toolbar {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav a {
+  color: $primary;
+  text-transform: uppercase;
+  font-family: "Century Gothic Bold";
+}
+
+.auth-menu {
+  a {
+    font-size: 12px;
+  }
+
+  .dropdown-toggle {
+    color: $primary;
+    text-transform: uppercase;
+    font-family: "Century Gothic Bold";
+  }
+
+  .dropdown-menu {
+    background-color: #eee;
+
+    a {
+      color: $dark;
+    }
+  }
+}
