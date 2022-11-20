@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Footer from "../components/ui/Footer";
 import Toolbar from "../components/ui/Toolbar";
 
 function Base() {
@@ -7,7 +8,7 @@ function Base() {
     <>
       <Toolbar />
       <Outlet />
-      {/* TODO: Pie de página */}
+      <Footer />
     </>
   );
 }
