@@ -1,3 +1,5 @@
+@use "colors";
+
 /* FONT FACES DEFINITION */
 @font-face {
   font-family: "Century Gothic";
@@ -65,7 +67,6 @@
 /* END FONT FACES DEFINITION */
 
 /* The following block can be included in a custom.scss */ /* make the customizations */
-@use "colors";
 $font-family-sans-serif: "Century Gothic", sans-serif;
 $card-height: 100%;
 /* import bootstrap to set changes */
