@@ -1,3 +1,69 @@
+/* FONT FACES DEFINITION */
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/Century_Gothic_Regular/century_gothic.eot");
+  src: url("../fonts/Century_Gothic_Regular/century_gothic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Century_Gothic_Regular/century_gothic.woff2") format("woff2"),
+    url("../fonts/Century_Gothic_Regular/century_gothic.woff") format("woff"),
+    url("../fonts/Century_Gothic_Regular/century_gothic.ttf") format("truetype"),
+    url("../fonts/Century_Gothic_Regular/century_gothic.svg#century_gothicregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Italic";
+  src: url("../fonts/Century_Gothic_Italic/century_gothic_italic.eot");
+  src: url("../fonts/Century_Gothic_Italic/century_gothic_italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Century_Gothic_Italic/century_gothic_italic.woff2")
+      format("woff2"),
+    url("../fonts/Century_Gothic_Italic/century_gothic_italic.woff")
+      format("woff"),
+    url("../fonts/Century_Gothic_Italic/century_gothic_italic.ttf")
+      format("truetype"),
+    url("../fonts/Century_Gothic_Italic/century_gothic_italic.svg#century_gothicitalic")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url("../fonts/Century_Gothic_Bold/century_gothic_bold.eot");
+  src: url("../fonts/Century_Gothic_Bold/century_gothic_bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Century_Gothic_Bold/century_gothic_bold.woff2")
+      format("woff2"),
+    url("../fonts/Century_Gothic_Bold/century_gothic_bold.woff") format("woff"),
+    url("../fonts/Century_Gothic_Bold/century_gothic_bold.ttf")
+      format("truetype"),
+    url("../fonts/Century_Gothic_Bold/century_gothic_bold.svg#century_gothicbold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic Bold Italic";
+  src: url("../fonts/Century_Gothic_Bold_Italic/century_gothic_bold_italic.eot");
+  src: url("../fonts/Century_Gothic_Bold_Italic/century_gothic_bold_italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Century_Gothic_Bold_Italic/century_gothic_bold_italic.woff2")
+      format("woff2"),
+    url("../fonts/Century_Gothic_Bold_Italic/century_gothic_bold_italic.woff")
+      format("woff"),
+    url("../fonts/Century_Gothic_Bold_Italic/century_gothic_bold_italic.ttf")
+      format("truetype"),
+    url("../fonts/Century_Gothic_Bold_Italic/century_gothic_bold_italic.svg#century_gothicbold_italic")
+      format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+/* END FONT FACES DEFINITION */
+
 /* The following block can be included in a custom.scss */ /* make the customizations */
 $primary: #00c6f8;
 $secondary: #0055ff;
@@ -14,22 +80,22 @@ $teams: #f4cf72;
 $levels: #8ab1f6;
 $rewards: #f07575;
 $theme-colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark,
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
 );
 $game-colors: (
-    "gold": $gold,
-    "silver": $silver,
-    "copper": $copper,
-    "teams": $teams,
-    "levels": $levels,
-    "rewards": $rewards,
+  "gold": $gold,
+  "silver": $silver,
+  "copper": $copper,
+  "teams": $teams,
+  "levels": $levels,
+  "rewards": $rewards,
 );
 $theme-colors: map-merge($theme-colors, $game-colors);
 $font-family-sans-serif: "Century Gothic", sans-serif;
