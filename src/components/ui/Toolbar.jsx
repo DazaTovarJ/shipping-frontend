@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import logo from "../../assets/img/LOGO_INSTAYA_192.svg";
+import logo from "../../assets/img/LOGO_INSTAYA_192.png";
 
 function Toolbar() {
   return (
     <Navbar bg="white" expand="lg" className="shadow-sm">
       <Container fluid>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="InstaYa Mensajería" />
+          <img src={logo} alt="InstaYa Mensajería" height="60" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
