@@ -10,6 +10,7 @@ import Base from "./pages/Base";
 import Home from "./pages/Home";
 import "./App.scss";
 import GenerarOrden from "./pages/auth/GenerarOrden";
+import UserProfile from "./pages/user/UserProfile";
 
 function App() {
   library.add(far, fas);
@@ -29,6 +30,7 @@ function App() {
           {/* /shippingStatus */}
           <Route path="GenerateOrder" element={<GenerarOrden/>} />
         </Route>
+        <Route path="profile" element={<UserProfile />}/>
       </Routes>
     </HashRouter>
   );

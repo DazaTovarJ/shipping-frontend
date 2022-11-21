@@ -9,9 +9,11 @@ function Toolbar() {
   return (
     <Navbar bg="white" expand="lg" className="main-toolbar">
       <Container fluid>
-        <Navbar.Brand href="#home">
-          <img src={logo} alt="InstaYa Mensajería" height="72" />
-        </Navbar.Brand>
+        <LinkContainer to="/">
+          <Navbar.Brand>
+            <img src={logo} alt="InstaYa Mensajería" height="72" />
+          </Navbar.Brand>
+        </LinkContainer>
         <div className="d-flex flex-column ms-auto">
           <Nav className="ms-auto auth-menu">
             <NavDropdown
@@ -24,7 +26,10 @@ function Toolbar() {
               id="basic-nav-dropdown"
               align="end"
             >
-              <NavDropdown.Item href="#action/3.1">Ver Perfil</NavDropdown.Item>
+              <LinkContainer to="/profile">
+                <NavDropdown.Item>Ver Perfil</NavDropdown.Item>
+                </LinkContainer>
+
               <NavDropdown.Item href="#action/3.3">
                 Cerrar Sesión
               </NavDropdown.Item>
@@ -33,7 +38,9 @@ function Toolbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto main-nav">
-              <Nav.Link href="#home">Inicio</Nav.Link>
+              <LinkContainer to="/">
+                <Nav.Link>Inicio</Nav.Link>
+              </LinkContainer>
               <LinkContainer to="/GenerateOrder">              
               <Nav.Link> Generar Orden</Nav.Link>
               </LinkContainer>
