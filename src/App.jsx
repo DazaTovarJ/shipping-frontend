@@ -29,8 +29,7 @@ function App() {
           {/* /shippingStatus */}
           <Route path="shippingStatus" />
         </Route>
-        <Route path="profile" element={<UserProfile />}>
-        </Route>
+        <Route path="profile" element={<UserProfile />}/>
       </Routes>
     </HashRouter>
   );
