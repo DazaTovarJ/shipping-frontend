@@ -3,6 +3,7 @@ import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../assets/img/LOGO_INSTAYA_192.png";
 import "./Toolbar.scss";
+import { LinkContainer } from "react-router-bootstrap";
 
 function Toolbar() {
   return (
@@ -33,7 +34,9 @@ function Toolbar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto main-nav">
               <Nav.Link href="#home">Inicio</Nav.Link>
-              <Nav.Link href="#link">Generar Orden</Nav.Link>
+              <LinkContainer to="/GenerateOrder">              
+              <Nav.Link> Generar Orden</Nav.Link>
+              </LinkContainer>
               <Nav.Link href="#link">Listado de Órdenes</Nav.Link>
               <Nav.Link href="#link">Contáctanos</Nav.Link>
             </Nav>
