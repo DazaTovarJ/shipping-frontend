@@ -1,7 +1,20 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import RegistroForm from "../../components/form/Registro";
+import Img from "../../assets/img/packaging_2.png";
 
 const Register = () => {
-  return <div>Register</div>;
+  return <Container fluid className="p-4">
+    <Row className="justify-content-center align-items-center">
+      <Col>
+        <img src={Img} alt=" packaging_2" height="800" />
+
+      </Col>
+      <Col>
+        <RegistroForm />
+      </Col>
+    </Row>
+  </Container>;
 };
 
 export default Register;
