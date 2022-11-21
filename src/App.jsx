@@ -9,6 +9,7 @@ import AuthBase from "./pages/auth/Base";
 import Base from "./pages/Base";
 import Home from "./pages/Home";
 import "./App.scss";
+import GenerarOrden from "./pages/auth/GenerarOrden";
 import UserProfile from "./pages/user/UserProfile";
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
           {/* / */}
           <Route index element={<Home />} />
           {/* /shippingStatus */}
-          <Route path="shippingStatus" />
+          <Route path="GenerateOrder" element={<GenerarOrden/>} />
         </Route>
         <Route path="profile" element={<UserProfile />}/>
       </Routes>
