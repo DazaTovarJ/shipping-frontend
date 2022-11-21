@@ -9,6 +9,7 @@ import AuthBase from "./pages/auth/Base";
 import Base from "./pages/Base";
 import Home from "./pages/Home";
 import "./App.scss";
+import UserProfile from "./pages/user/UserProfile";
 
 function App() {
   library.add(far, fas);
@@ -27,6 +28,8 @@ function App() {
           <Route index element={<Home />} />
           {/* /shippingStatus */}
           <Route path="shippingStatus" />
+        </Route>
+        <Route path="profile" element={<UserProfile />}>
         </Route>
       </Routes>
     </HashRouter>

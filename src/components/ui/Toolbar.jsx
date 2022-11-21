@@ -23,7 +23,7 @@ function Toolbar() {
               id="basic-nav-dropdown"
               align="end"
             >
-              <NavDropdown.Item href="#action/3.1">Ver Perfil</NavDropdown.Item>
+              <NavDropdown.Item href="#profile">Ver Perfil</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">
                 Cerrar Sesión
               </NavDropdown.Item>
