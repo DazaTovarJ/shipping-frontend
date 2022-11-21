@@ -3,6 +3,7 @@ import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../assets/img/LOGO_INSTAYA_192.png";
 import "./Toolbar.scss";
+import {LinkContainer} from "react-router-bootstrap";
 
 function Toolbar() {
   return (
@@ -23,7 +24,10 @@ function Toolbar() {
               id="basic-nav-dropdown"
               align="end"
             >
-              <NavDropdown.Item href="#profile">Ver Perfil</NavDropdown.Item>
+              <LinkContainer to="/profile">
+                <NavDropdown.Item>Ver Perfil</NavDropdown.Item>
+                </LinkContainer>
+
               <NavDropdown.Item href="#action/3.3">
                 Cerrar Sesión
               </NavDropdown.Item>

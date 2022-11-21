@@ -1,4 +1,4 @@
-import { Container } from 'react-bootstrap';
+import { Container, Stack } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -7,11 +7,13 @@ import Row from 'react-bootstrap/Row';
 function UserProfile() {
     return (
         <Container fluid>
+           <Row className='md3'/>
             <div className="row-fluid">
-                <div className="span12 h2 fw-bold text-center text-primary">
-                INFORMACION DE USUARIO
+                <div className="span12 h2 fs-Century-Gothic  fw-bold  text-center text-primary">
+                INFORMACIÓN DE USUARIO
                 </div>
             </div>
+
             <Form>
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridNombre">
