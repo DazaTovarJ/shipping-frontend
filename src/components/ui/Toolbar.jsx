@@ -26,7 +26,10 @@ function Toolbar() {
               id="basic-nav-dropdown"
               align="end"
             >
-              <NavDropdown.Item href="#action/3.1">Ver Perfil</NavDropdown.Item>
+              <LinkContainer to="/profile">
+                <NavDropdown.Item>Ver Perfil</NavDropdown.Item>
+                </LinkContainer>
+
               <NavDropdown.Item href="#action/3.3">
                 Cerrar Sesión
               </NavDropdown.Item>
