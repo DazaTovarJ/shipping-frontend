@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../assets/img/LOGO_INSTAYA_192.png";
 import "./Toolbar.scss";
 
+
 function Toolbar() {
   return (
     <Navbar bg="white" expand="lg" className="main-toolbar">
