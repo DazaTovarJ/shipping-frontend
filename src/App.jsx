@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import "./App.scss";
 import GenerarOrden from "./pages/auth/GenerarOrden";
 import UserProfile from "./pages/user/UserProfile";
+import ListaOrdenes from "./components/form/ListaOrdenes";
 
 function App() {
   library.add(far, fas);
@@ -29,8 +30,9 @@ function App() {
           <Route index element={<Home />} />
           {/* /shippingStatus */}
           <Route path="GenerateOrder" element={<GenerarOrden/>} />
+          <Route path="OrderList" element={<ListaOrdenes/>} />         
+          <Route path="profile" element={<UserProfile />}/>
         </Route>
-        <Route path="profile" element={<UserProfile />}/>
       </Routes>
     </HashRouter>
   );

@@ -44,7 +44,9 @@ function Toolbar() {
               <LinkContainer to="/GenerateOrder">              
               <Nav.Link> Generar Orden</Nav.Link>
               </LinkContainer>
-              <Nav.Link href="#link">Listado de Órdenes</Nav.Link>
+              <LinkContainer to="/OrderList">              
+              <Nav.Link>Listado de Órdenes</Nav.Link>
+              </LinkContainer>
               <Nav.Link href="#link">Contáctanos</Nav.Link>
             </Nav>
           </Navbar.Collapse>
