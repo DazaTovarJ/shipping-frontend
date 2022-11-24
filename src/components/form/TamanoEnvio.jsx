@@ -10,13 +10,13 @@ const TamanoEnvio = () => {
         <Col>
           <Form.Group controlId="formBasicLenght">
             <Form.Label>LARGO</Form.Label>
-            <Form.Control type="number" placeholder="Número en cm." />
+            <Form.Control size="sm" type="number" placeholder="Nro. en cm" />
           </Form.Group>
         </Col>
         <Col>
           <Form.Group controlId="formBasicHeight">
             <Form.Label>ALTO</Form.Label>
-            <Form.Control type="number" placeholder="Número en cm." />
+            <Form.Control size="sm" type="number" placeholder="Nro. en cm" />
           </Form.Group>
         </Col>
       </Row>
@@ -24,13 +24,13 @@ const TamanoEnvio = () => {
         <Col>
           <Form.Group controlId="formBasicWidth">
             <Form.Label>ANCHO</Form.Label>
-            <Form.Control type="number" placeholder="Número en cm." />
+            <Form.Control size="sm" type="number" placeholder="Nro. en cm" />
           </Form.Group>
         </Col>
         <Col>
           <Form.Group controlId="formBasicWeight">
             <Form.Label>PESO</Form.Label>
-            <Form.Control type="number" placeholder="Número en gr." />
+            <Form.Control size="sm" type="number" placeholder="Nro. en gr" />
           </Form.Group>
         </Col>
       </Row>
@@ -48,14 +48,14 @@ const TamanoEnvio = () => {
       </Row>
       <Row>
         <Form.Group controlId="formBasicValue">
-          <Form.Label>VALOR AVALUADO</Form.Label>
-          <Form.Control type="number" placeholder="Ingrese valor" />
+          <Form.Label>VALOR AVALUADO MERCANCIA</Form.Label>
+          <Form.Control size="sm" type="number" placeholder="Ingrese valor" />
         </Form.Group>
       </Row>
       <Row>
         <Form.Group controlId="formBasicPayment">
           <Form.Label>FORMA DE PAGO</Form.Label>
-          <Form.Select defaultValue="Choose...">
+          <Form.Select size="sm" defaultValue="Choose...">
             <option>Seleccione</option>
             <option>PAGO CONTRAENTREGA</option>
           </Form.Select>

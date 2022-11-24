@@ -7,39 +7,42 @@ import InfoRecogida from "./InfoRecogida";
 import InfoEntrega from "./InfoEntrega";
 import TamanoEnvio from "./TamanoEnvio";
 import "./GenerarOrden.scss";
-import Rastreo from "./Rastreo";
 import Container from "react-bootstrap/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Modal from "react-bootstrap/Modal";
+import logo from "../../assets/img/LOGO_INSTAYA_192.png";
+
 
 function GenerarOrden() {
   return (
     <Container>
       <Row>
         <Col>
+        <div className="icon text-center mb-5">       
+                <img src={logo} alt="InstaYa Mensajería" height="90" />
+                </div> 
           <Card style={{ width: "50rem" }} className="rounded-4 mt-4">
             <Card.Body>
               <Form>
                 <div className="icon text-center mb-3">
                   <FontAwesomeIcon />
-                  <h1>REGISTRAR ORDEN</h1>{" "}
+                  <h1>INFORMACIÓN DE ORDEN</h1>{" "}
                 </div>
                 <Row>
-                  <Col lg={7}>
+                  <Col >
                     <InfoRecogida></InfoRecogida>
                     <InfoEntrega></InfoEntrega>
                   </Col>
-                  <Col lg={5}>
+                  <Col>
                     <TamanoEnvio></TamanoEnvio>
 
                     <div className=" justify-content-center align-items-center d-grid gap-2 mt-4">
                       <Button
                         className="crear"
-                        variant="primary"
+                        variant="dark"
                         type="submit"
                         size="sm"
                       >
-                        GENERAR ORDEN
+                        EDITAR
                       </Button>
 
                       <Button
@@ -48,31 +51,19 @@ function GenerarOrden() {
                         type="submit"
                         size="sm"
                       >
-                        CANCELAR ORDEN
+                        ACTUALIZAR ORDEN
                       </Button>
                     </div>
+
                   </Col>
                 </Row>
               </Form>
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Modal.Dialog>
-            <Modal.Body>
-              <Card
-                style={{ width: "18rem", height: "16rem" }}
-                className="rounded-4 mt-5"
-              >
-                <Card.Body>
-                  <Rastreo></Rastreo>
-                </Card.Body>
-              </Card>
-            </Modal.Body>
-          </Modal.Dialog>
-        </Col>
+
+        
       </Row>
-      <Row></Row>
     </Container>
   );
 }
