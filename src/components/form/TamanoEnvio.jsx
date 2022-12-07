@@ -47,13 +47,13 @@ const TamanoEnvio = () => {
         </Col>
       </Row>
       <Row>
-        <Form.Group controlId="formBasicValue">
+        <Form.Group className="mb-3" controlId="formBasicValue">
           <Form.Label>VALOR AVALUADO MERCANCIA</Form.Label>
           <Form.Control size="sm" type="number" placeholder="Ingrese valor" />
         </Form.Group>
       </Row>
       <Row>
-        <Form.Group controlId="formBasicPayment">
+        <Form.Group className="mb-3" controlId="formBasicPayment">
           <Form.Label>FORMA DE PAGO</Form.Label>
           <Form.Select size="sm" defaultValue="Choose...">
             <option>Seleccione</option>

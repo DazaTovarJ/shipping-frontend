@@ -21,7 +21,7 @@ function Rastreo() {
 
       <Row>
         <Form.Group className="mt-2" controlId="formBasicTracking">
-          <Form.Control size="sm"/>
+          <Form.Control size="sm" readOnly/>
         </Form.Group>
       </Row>
     </div>

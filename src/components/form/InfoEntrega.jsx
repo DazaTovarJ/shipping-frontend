@@ -14,9 +14,21 @@ const InfoEntrega = () => {
           </Form.Group>
         </Col>
         <Col lg={4}>
-          <Form.Group controlId="formBasicCity">
+        <Form.Group controlId="formBasicCity">
             <Form.Label>CIUDAD</Form.Label>
-            <Form.Control size="sm" placeholder="Ingrese ciudad" />
+            <Form.Select size="sm" defaultValue="Choose...">
+              <option>--</option>
+              <option>Barranquilla</option>
+              <option>Bogota</option>
+              <option>Bucaramanga</option>
+              <option>Cali</option>
+              <option>Cartagena</option>
+              <option>Medellín</option>
+              <option>Neiva</option>
+              <option>Pereira</option>
+              <option>Santa Marta</option>
+
+            </Form.Select>
           </Form.Group>
         </Col>
       </Row>
@@ -41,13 +53,13 @@ const InfoEntrega = () => {
         <Col>
           <Form.Group controlId="formBasicID">
           <Form.Label>IDENTIFICACION</Form.Label>
-            <Form.Control size="sm" type="number" placeholder="Ingrese número" />
+            <Form.Control size="sm" placeholder="Ingrese número" />
           </Form.Group>
         </Col>
         <Col>
           <Form.Group controlId="formBasicPhone">
             <Form.Label>TELEFONO</Form.Label>
-            <Form.Control size="sm" type="number" placeholder="Ingrese número" />
+            <Form.Control size="sm" placeholder="Ingrese número" />
           </Form.Group>
         </Col>
       </Row>
